@@ -16,6 +16,9 @@ import * as TextBanner02dev from 'src/components/text-banner/TextBanner02.dev';
 import * as TextBanner01dev from 'src/components/text-banner/TextBanner01.dev';
 import * as TextBanner from 'src/components/text-banner/TextBanner';
 import * as TestimonialCarousel from 'src/components/testimonial-carousel/TestimonialCarousel';
+import * as TestimonialWithButtondev from 'src/components/testimonial/TestimonialWithButton.dev';
+import * as TestimonialDefaultdev from 'src/components/testimonial/TestimonialDefault.dev';
+import * as Testimonial from 'src/components/testimonial/Testimonial';
 import * as Navigation from 'src/components/sxa/Navigation';
 import * as LinkList from 'src/components/sxa/LinkList';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
@@ -23,7 +26,11 @@ import * as SubmissionFormDefaultdev from 'src/components/submission-form/Submis
 import * as SubmissionFormCentereddev from 'src/components/submission-form/SubmissionFormCentered.dev';
 import * as SubmissionForm from 'src/components/submission-form/SubmissionForm';
 import * as SlideCarouseldev from 'src/components/slide-carousel/SlideCarousel.dev';
+import * as SimilarIdeasDefaultdev from 'src/components/similar-ideas/SimilarIdeasDefault.dev';
+import * as SimilarIdeas from 'src/components/similar-ideas/SimilarIdeas';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
+import * as SearchBarDefaultdev from 'src/components/search-bar/SearchBarDefault.dev';
+import * as SearchBar from 'src/components/search-bar/SearchBar';
 import * as PromoImage from 'src/components/promo-image/PromoImage';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
@@ -40,6 +47,10 @@ import * as PageHeaderCentereddev from 'src/components/page-header/PageHeaderCen
 import * as PageHeaderBlueTextdev from 'src/components/page-header/PageHeaderBlueText.dev';
 import * as PageHeaderBlueBackgrounddev from 'src/components/page-header/PageHeaderBlueBackground.dev';
 import * as PageHeader from 'src/components/page-header/PageHeader';
+import * as NexusHeroDefaultdev from 'src/components/nexus-hero/NexusHeroDefault.dev';
+import * as NexusHero from 'src/components/nexus-hero/NexusHero';
+import * as NexusCardsDefaultdev from 'src/components/nexus-cards/NexusCardsDefault.dev';
+import * as NexusCards from 'src/components/nexus-cards/NexusCards';
 import * as MultiPromoTabs from 'src/components/multi-promo-tabs/MultiPromoTabs';
 import * as MultiPromo from 'src/components/multi-promo/MultiPromo';
 import * as modetoggledev from 'src/components/mode-toggle/mode-toggle.dev';
@@ -54,6 +65,10 @@ import * as LocationSearchItemdev from 'src/components/location-search/LocationS
 import * as LocationSearchDefaultdev from 'src/components/location-search/LocationSearchDefault.dev';
 import * as LocationSearch from 'src/components/location-search/LocationSearch';
 import * as GoogleMapdev from 'src/components/location-search/GoogleMap.dev';
+import * as JobSectiondev from 'src/components/job-section/JobSection.dev';
+import * as JobSection from 'src/components/job-section/JobSection';
+import * as JobItemdev from 'src/components/job-section/JobItem.dev';
+import * as JobItem from 'src/components/job-section/JobItem';
 import * as ImageGalleryNoSpacingdev from 'src/components/image-gallery/ImageGalleryNoSpacing.dev';
 import * as ImageGalleryGriddev from 'src/components/image-gallery/ImageGalleryGrid.dev';
 import * as ImageGalleryFiftyFiftydev from 'src/components/image-gallery/ImageGalleryFiftyFifty.dev';
@@ -116,6 +131,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['TextBanner01', { ...TextBanner01dev }],
   ['TextBanner', { ...TextBanner }],
   ['TestimonialCarousel', { ...TestimonialCarousel }],
+  ['TestimonialWithButton', { ...TestimonialWithButtondev }],
+  ['TestimonialDefault', { ...TestimonialDefaultdev }],
+  ['Testimonial', { ...Testimonial }],
   ['Navigation', { ...Navigation }],
   ['LinkList', { ...LinkList }],
   ['SubscriptionBanner', { ...SubscriptionBanner }],
@@ -123,7 +141,11 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SubmissionFormCentered', { ...SubmissionFormCentereddev }],
   ['SubmissionForm', { ...SubmissionForm }],
   ['SlideCarousel', { ...SlideCarouseldev }],
+  ['SimilarIdeasDefault', { ...SimilarIdeasDefaultdev }],
+  ['SimilarIdeas', { ...SimilarIdeas }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],
+  ['SearchBarDefault', { ...SearchBarDefaultdev }],
+  ['SearchBar', { ...SearchBar }],
   ['PromoImage', { ...PromoImage }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
@@ -140,6 +162,10 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['PageHeaderBlueText', { ...PageHeaderBlueTextdev }],
   ['PageHeaderBlueBackground', { ...PageHeaderBlueBackgrounddev }],
   ['PageHeader', { ...PageHeader }],
+  ['NexusHeroDefault', { ...NexusHeroDefaultdev }],
+  ['NexusHero', { ...NexusHero }],
+  ['NexusCardsDefault', { ...NexusCardsDefaultdev }],
+  ['NexusCards', { ...NexusCards }],
   ['MultiPromoTabs', { ...MultiPromoTabs }],
   ['MultiPromo', { ...MultiPromo }],
   ['mode-toggle', { ...modetoggledev }],
@@ -154,6 +180,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LocationSearchDefault', { ...LocationSearchDefaultdev }],
   ['LocationSearch', { ...LocationSearch }],
   ['GoogleMap', { ...GoogleMapdev }],
+  ['JobSection', { ...JobSectiondev, ...JobSection }],
+  ['JobItem', { ...JobItemdev, ...JobItem }],
   ['ImageGalleryNoSpacing', { ...ImageGalleryNoSpacingdev }],
   ['ImageGalleryGrid', { ...ImageGalleryGriddev }],
   ['ImageGalleryFiftyFifty', { ...ImageGalleryFiftyFiftydev }],
